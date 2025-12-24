@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  font-family: "Azeret Mono", monospace !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Navbar base */
+.navbar {
+  background-color: #F9F8F3; /* soft off-white like Hirva's */
+}
+
+/* Navbar links */
+.nav-link {
+  color: #004d26; /* deep green tone */
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  /* background-color: #E8F5E9; soft green hover */
+  /* color: #006d35; */
+  background-color: rgb(13, 135, 82) !important;
+  color: #fff !important;
+}
+
+/* Hover pill effect */
+.hover-pill {
+  border-radius: 50px;
+}
+
+/* Contact Us button */
+.btn-light-green {
+  background-color: #D8FFB3; /* light neon green */
+  border: 1px solid #BDF796;
+  color: #004d26;
+  transition: all 0.3s ease;
+  border-color: #004d26;
+}
+
+.btn-light-green:hover {
+  /* background-color: #BFF796;
+  color: #003d1f; */
+  background-color: rgb(13, 135, 82) !important;
+  color: #fff !important;
+}
+
+/* Green dot inside Contact Us */
+.btn-light-green .dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(13, 135, 82);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* When hovering the whole button, make the dot white */
+.btn-light-green:hover .dot {
+  background-color: #fff;
+}
+
+
+/* Advancing Sustainable Section CSS */
+.main-text {
+    font-size: 79px;
+    font-weight: 400;
+    color: #024230;
+}
+
+/* Pill container */
+.moving-pill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1.5px solid rgb(2,66,48);
+  border-radius: 50px;
+  padding: 8px 16px;
+  width: 400px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(237,236,230);
+}
+
+/* Green dot */
+.moving-pill .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #0D8752;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Scrolling text */
+.scroll-text {
+  display: flex;
+  white-space: nowrap;
+  margin-left: 10px;
+  animation: scrollTicker 15s linear infinite;
+}
+
+.scroll-text span {
+  color: rgb(2,66,48);
+  font-weight: 500;
+  font-size: 15px;
+  padding-right: 5px; /* space between repeats */
+}
+
+/* Keyframes for seamless scroll */
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Solar Panels Background Section */
+.solar-bg {
+  background-image: url('../images/solar_panels/solar.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* adjust as needed */
+  position: relative;
+  color: #fff;
+  border-radius: 40px;
+}
+
+/* Optional overlay for better text contrast */
+.solar-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.4); dark overlay */
+  z-index: 0;
+}
+
+.solar-bg .container {
+  position: relative;
+  z-index: 1;
+}
+
+.brand-box {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px 20px;
+  display: inline-block;
+
+}
+
+.hirva-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(18 169 105);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Our Dream Section Css */
+.our-dream-text {
+  color: rgb(2,66,48);
+  font-size: 18px;
+}
+
+.our-dream-description {
+  font-size: 42px;
+  color: rgb(2,66,48);
+  width: 75%;
+}
+
+/* Infrastructure Development Section Css */
+.infra-dev-text {
+  color: rgb(2,66,48);
+  font-size: 18px;
+}
+
+/* Pill container */
+.infra-moving-pill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1.5px solid rgb(2,66,48);
+  border-radius: 50px;
+  padding: 8px 16px;
+  width: 350px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+
+/* Green dot */
+.infra-moving-pill .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #0D8752;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Scrolling text */
+.infra-scroll-text {
+  display: flex;
+  white-space: nowrap;
+  margin-left: 10px;
+  animation: scrollTicker 30s linear infinite;
+}
+
+.infra-scroll-text span {
+  color: rgb(2,66,48);
+  font-weight: 500;
+  font-size: 13px;
+  padding-right: 5px; /* space between repeats */
+}
+
+/* Keyframes for seamless scroll */
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.infra-points {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #004d26;
+}
+
+/* Technological Innovation Section Css */
+.tech-ino-text {
+  color: rgb(2,66,48);
+  font-size: 18px;
+}
+
+.tech-points {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #004d26;
+}
+
+.tech-moving-pill {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1.5px solid rgb(2,66,48);
+  border-radius: 50px;
+  padding: 8px 16px;
+  width: 350px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+}
+
+/* Green dot */
+.tech-moving-pill .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #0D8752;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Scrolling text */
+.tech-scroll-text {
+  display: flex;
+  white-space: nowrap;
+  margin-left: 10px;
+  animation: scrollTicker 30s linear infinite;
+}
+
+.tech-scroll-text span {
+  color: rgb(2,66,48);
+  font-weight: 500;
+  font-size: 13px;
+  padding-right: 5px; /* space between repeats */
+}
+
+.form-submit-button {
+  width: 25%;
+}
+
+/* Keyframes for seamless scroll */
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ground Panel Background Image Section Css */
+.ground-bg {
+  background-image: url('../images/solar_panels/ground_panels.avif');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  height: 100vh; /* adjust as needed */
+  position: relative;
+  color: #fff;
+}
+
+.sustainability-card{
+  margin-top: 250px;
+}
+
+.innovation-card{
+  margin-top: 450px;
+}
+
+/* Join The Team Section */
+.openings-text {
+  font-size: 145px;
+  font-weight: 300;
+}
+
+.openings-tab {
+  background-color: white; /* your green hover color */
+}
+
+.openings-tab:hover {
+  background-color: #D1FBA5; /* your green hover color */
+  /* color: white;  */
+}
+
+/* Lets Connect Section */
+.lets-connect-cont {
+  padding-top: 150px;
+}
+
+.lets-connect-text {
+  font-size: 160px;
+  font-weight: 300;
+}
+
+.contact-us-card {
+  width: 25%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.fill-form-text {
+  font-size: 40px;
+}
+
+form .form-control {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+form .btn:hover {
+  background-color: #036b47;
+  color: #fff;
+}
+
+.card-image{ 
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 412px) {
+  /* .navbar {
+    background-color: red !important;
+  } */
+
+  .nav-heading-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logos {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  .nav-menu-items {
+    width: 50px;
+  }
+
+  .main-text {
+    font-size: 34px;
+  }
+
+  .horizontal-pill {
+    height: 1px;
+  }
+
+  .card-image {
+    margin-bottom: 320px;
+    width: 280px !important;
+    opacity: 0.7 !important;
+    font-size: 12px;
+  }
+
+  .our-main-solution {
+    font-size: 18px;
+  }
+
+  .provide-text {
+    font-size: 15px;
+  }
+
+  .our-dream-description {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .x-logo {
+    height: 50px !important;
+  }
+
+  .infra-dev-text {
+    font-size: 15px;
+  }
+
+  .infra-main-cont {
+    margin: 2% !important;
+    padding: 8% !important;
+  }
+
+  .infra-points {
+    font-size: 13px;
+    padding: 0%;
+  }
+
+  .tech-ino-text {
+    font-size: 15px;
+  }
+
+  .tech-main-cont {
+    padding: 0% !important;
+  }
+
+  .tech-points {
+    font-size: 13px;
+    padding: 0%;
+    margin-bottom: 0%;
+  }
+
+  .sustainability-card{
+    margin-top: 10px;
+  }
+
+  .innovation-card{
+    margin-top: 10px;
+  }
+
+  .ground-bg {
+    background-image: url('../images/solar_panels/ground_panels.avif');
+    /* background-size: cover; */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100vh; /* adjust as needed */
+    position: relative;
+    color: #fff;
+  }
+
+  .ground-bg-row {
+    justify-content: center;
+  }
+
+  .join-the-team-text {
+    font-size: 14px;
+  }
+
+  .join-the-team-desc {
+    font-size: 14px;
+  }
+
+  .openings-text {
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .lets-connect-cont {
+    padding-top: 20px;
+  }
+
+  .lets-connect-text {
+    font-size: 70px;
+    font-weight: 300;
+  }
+
+  .contact-us-card {
+    width: 70%;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .fill-form-text {
+    font-size: 21px;
+  }
+
+  .form-submit-button {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1300px) {
+  .hover-pill{
+    font-size: 13px;
+  }
+
+  .contact-text{
+    font-size: 10px;
+  }
+
+  .ground-bg-row {
+    padding: 2%;
+    padding-right: 8%;
+  }
+
+  .lets-connect-cont {
+    padding-top: 10px;
+  }
+
+  .lets-connect-text {
+    font-size: 120px;
+    font-weight: 300;
+  }
+
+}
