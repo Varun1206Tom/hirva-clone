@@ -24,8 +24,6 @@ A clone of the Hirva website built using **HTML, CSS, and JavaScript**, replicat
 
 Check out the deployed website: [Hirva Clone](https://your-deployed-link.netlify.app)
 
-*(Replace with your Netlify/Vercel link if deployed)*
-
 ----
 
 ## 💻 How to Run Locally
