@@ -15,7 +15,7 @@ A clone of the Hirva website built using **HTML, CSS, and JavaScript**, replicat
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+), Bootstrap5+
 - **Tools:** VS Code, Git, GitHub
 
 ---
